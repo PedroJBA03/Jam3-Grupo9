@@ -28,6 +28,7 @@ public class ArrawMove : MonoBehaviour
 
         movementX = 0;
         movementY = 0;
+        speed = 800f;
 
         controladorJuego = GameObject.FindObjectOfType<PlayController>();
 
@@ -106,8 +107,16 @@ public class ArrawMove : MonoBehaviour
         {
             scoretwo.SumarPuntosTwo(-1);
             Debug.Log("Player 2 pierde punto");
-            Debug.Log("Player 2 pierde punto");
+            StartCoroutine(InitialPos());
         }
+    }
+
+    IEnumerator InitialPos()
+    {
+        speed = 0f;
+        yield return new WaitForSeconds(3.0f);
+        transform.position = new Vector3(-3.8f, -3.8f, 0);
+        speed = 800;
     }
 }
 
