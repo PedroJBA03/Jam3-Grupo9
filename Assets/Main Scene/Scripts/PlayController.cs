@@ -38,10 +38,12 @@ public class PlayController : MonoBehaviour
         if (conquistar == 0)
         {
             CafeWin.SetActive(true);
+            CorrectPanel.SetActive(false);
         }
         if (conquistar == 100)
         {
             EmpanadaWn.SetActive(true);
+            CorrectPanel.SetActive(false);
         }
     }
 

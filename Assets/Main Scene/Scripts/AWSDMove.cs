@@ -72,7 +72,7 @@ public class AWSDMove : MonoBehaviour
         {
             movementX = 0;
         }
-        clampedX = Mathf.Clamp(transform.position.x, -3.8f, 7.25f);
+        clampedX = Mathf.Clamp(transform.position.x, -3.8f, 6.9f);
     }
 
     private void VerticalMove()
@@ -90,7 +90,7 @@ public class AWSDMove : MonoBehaviour
         {
             movementY = 0;
         }
-        clampedY = Mathf.Clamp(transform.position.y, -3.9f, 3.3f);
+        clampedY = Mathf.Clamp(transform.position.y, -4.1f, 3.3f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
