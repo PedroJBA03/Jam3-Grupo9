@@ -8,6 +8,8 @@ public class AWSDMove : MonoBehaviour
 
     public float speed;
 
+    bool fail = true;
+
     float movementX;
     float movementY;
 
@@ -28,7 +30,7 @@ public class AWSDMove : MonoBehaviour
 
         movementX = 0;
         movementY = 0;
-        speed = 800f;
+        speed = 3f;
 
         controladorJuego = GameObject.FindObjectOfType<PlayController>();
 
@@ -46,7 +48,7 @@ public class AWSDMove : MonoBehaviour
 
     private void Rigid()
     {
-        Rb.velocity = new Vector2(movementX * speed * Time.deltaTime, movementY * speed * Time.deltaTime);
+        Rb.velocity = new Vector2(movementX * speed, movementY * speed);
     }
 
     private void MoveLimit()
@@ -99,22 +101,30 @@ public class AWSDMove : MonoBehaviour
             Debug.Log("Punto player 1");
             if (controladorJuego != null)
             {
-                controladorJuego.conquistar += 8.33f;
+                controladorJuego.conquistar += 10f;
             }
+            transform.position = new Vector3(-3.8f, -3.8f, 0);
+            controladorJuego.CorrectAnswer();
         }
-        if (collision.CompareTag("InAnswer"))
+        if (collision.CompareTag("InAnswer") && fail==true)
         {
-            scoreone.SumarPuntosOne(-1);
-            Debug.Log("Player 1 pierde punto");
+            if (scoreone.scoreone > 0)
+            {
+                scoreone.SumarPuntosOne(-1);
+                Debug.Log("Player 1 pierde punto");
+            }
             StartCoroutine(InitialPos());
         }
     }
 
     IEnumerator InitialPos()
     {
+        fail = false;
         speed = 0f;
         yield return new WaitForSeconds(3.0f);
         transform.position = new Vector3(-3.8f, -3.8f, 0);
-        speed = 800f;
+        yield return new WaitForSeconds(2.0f);
+        speed = 3f;
+        fail = true;
     }
 }
