@@ -1,33 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AWSDMove : MonoBehaviour
 {
+
     public float speed;
 
     float movementX;
     float movementY;
 
-    bool take = false;
+    float clampedX;
+    float clampedY;
 
     Rigidbody2D Rb;
+
+    [SerializeField] private score1 scoreone;
+
+    private PlayController controladorJuego;
+
     void Start()
     {
+        transform.position = new Vector3(-3.8f, -3.8f, 0);
+
         Rb = GetComponent<Rigidbody2D>();
 
         movementX = 0;
         movementY = 0;
+
+        controladorJuego = GameObject.FindObjectOfType<PlayController>();
+
     }
 
     void Update()
     {
-        Rb.velocity = new Vector2(movementX * speed * Time.deltaTime, movementY * speed * Time.deltaTime);
+        Rigid();
 
         HorizontalMove();
         VerticalMove();
-        Take();
 
+        MoveLimit();
+    }
+
+    private void Rigid()
+    {
+        Rb.velocity = new Vector2(movementX * speed * Time.deltaTime, movementY * speed * Time.deltaTime);
+    }
+
+    private void MoveLimit()
+    {
+        transform.position = new Vector2(clampedX, clampedY);
     }
 
     private void HorizontalMove()
@@ -46,6 +69,7 @@ public class AWSDMove : MonoBehaviour
         {
             movementX = 0;
         }
+        clampedX = Mathf.Clamp(transform.position.x, -3.8f, 7.25f);
     }
 
     private void VerticalMove()
@@ -63,14 +87,24 @@ public class AWSDMove : MonoBehaviour
         {
             movementY = 0;
         }
+        clampedY = Mathf.Clamp(transform.position.y, -3.9f, 3.3f);
     }
 
-    private void Take()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (collision.CompareTag("CoAnswer"))
         {
-            take = true;
-            Debug.Log("Jugador 1 agarra");
-        } else take = false;
+            scoreone.SumarPuntosOne(1);
+            Debug.Log("Punto player 1");
+            if (controladorJuego != null)
+            {
+                controladorJuego.conquistar += 8.33f;
+            }
+        }
+        if (collision.CompareTag("InAnswer"))
+        {
+            scoreone.SumarPuntosOne(-1);
+            Debug.Log("Player 1 pierde punto");
+        }
     }
 }
