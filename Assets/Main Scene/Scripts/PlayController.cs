@@ -16,6 +16,7 @@ public class PlayController : MonoBehaviour
 
     [SerializeField] private Slider slider;
     public float conquistar;
+    private bool hasPlayedWinSound = false; // Para evitar reproducir el sonido varias veces
 
     void Start()
     {
@@ -33,17 +34,25 @@ public class PlayController : MonoBehaviour
 
     void Update()
     {
-        slider.value = conquistar/100;
+        slider.value = conquistar / 100;
 
-        if (conquistar == 0)
+        if (conquistar == 0 && !hasPlayedWinSound)
         {
             CafeWin.SetActive(true);
             CorrectPanel.SetActive(false);
+            
+            // Reproduce el sonido de victoria para el equipo rojo
+            AudioManager.Instance.PlayRedTeamWinSFX();
+            hasPlayedWinSound = true;
         }
-        if (conquistar == 100)
+        else if (conquistar == 100 && !hasPlayedWinSound)
         {
             EmpanadaWn.SetActive(true);
             CorrectPanel.SetActive(false);
+            
+            // Reproduce el sonido de victoria para el equipo azul
+            AudioManager.Instance.PlayBlueTeamWinSFX();
+            hasPlayedWinSound = true;
         }
     }
 

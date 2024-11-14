@@ -104,6 +104,8 @@ public class ArrawMove : MonoBehaviour
             {
                 controladorJuego.conquistar -= 10f;
             }
+            // Reproduce el sonido de victoria
+            AudioManager.Instance.PlayWinSFX();
             transform.position = new Vector3(-3.8f, -3.8f, 0);
             controladorJuego.CorrectAnswer();
         }
