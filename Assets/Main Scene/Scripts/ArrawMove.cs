@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ArrawMove : MonoBehaviour
 {
-
+    public bool CorAnsO;
     public float speed;
 
     float movementX;
@@ -24,13 +24,14 @@ public class ArrawMove : MonoBehaviour
 
     void Start()
     {
+        CorAnsO = false;
         transform.position = new Vector3(-3.8f, -3.8f, 0);
 
         Rb = GetComponent<Rigidbody2D>();
 
         movementX = 0;
         movementY = 0;
-        speed = 3f;
+        speed = 0;
 
         controladorJuego = GameObject.FindObjectOfType<PlayController>();
 
@@ -44,6 +45,9 @@ public class ArrawMove : MonoBehaviour
         VerticalMove();
 
         MoveLimit();
+
+        Confirmacion(); 
+        PlayQ();
     }
 
     private void Rigid()
@@ -104,9 +108,6 @@ public class ArrawMove : MonoBehaviour
             {
                 controladorJuego.conquistar -= 10f;
             }
-            // Reproduce el sonido de victoria
-            AudioManager.Instance.PlayWinSFX();
-            transform.position = new Vector3(-3.8f, -3.8f, 0);
             controladorJuego.CorrectAnswer();
         }
         if (collision.CompareTag("InAnswer") && fail==true)
@@ -130,6 +131,22 @@ public class ArrawMove : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         speed = 3f;
         fail = true;
+    }
+
+    private void PlayQ()
+    {
+        if (controladorJuego != null && controladorJuego.playQ == true)
+        {
+            speed = 3f;
+        }
+    }
+
+    private void Confirmacion()
+    {
+        if (controladorJuego.confir == true)
+        {
+            transform.position = new Vector3(-3.8f, -3.8f, 0);
+        }
     }
 }
 
