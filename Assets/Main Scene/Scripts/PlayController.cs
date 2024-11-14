@@ -10,12 +10,17 @@ public class PlayController : MonoBehaviour
     [SerializeField] private GameObject CafeWin;
     [SerializeField] private GameObject EmpanadaWn;
 
+    [SerializeField] private GameObject ButtonIn;
+
     public List<GameObject> questions;
 
     private GameObject lastQuestions;
 
     [SerializeField] private Slider slider;
     public float conquistar;
+
+    public bool playQ = false;
+    public bool confir = false;
     private bool hasPlayedWinSound = false; // Para evitar reproducir el sonido varias veces
 
     void Start()
@@ -23,6 +28,7 @@ public class PlayController : MonoBehaviour
         CorrectPanel.SetActive(false);
         CafeWin.SetActive(false);
         EmpanadaWn.SetActive(false);
+        ButtonIn.SetActive(true);
         conquistar = 50.0f;
         foreach (GameObject obj in questions)
         {
@@ -61,6 +67,8 @@ public class PlayController : MonoBehaviour
         int randomIndex = Random.Range(0, questions.Count);
         lastQuestions = questions[randomIndex];
         lastQuestions.SetActive(true);
+        ButtonIn.SetActive(false);
+        playQ = true;
     }
 
     public void RemoveLastQuestions()
@@ -76,7 +84,9 @@ public class PlayController : MonoBehaviour
     public void CorrectAnswer()
     {
         CorrectPanel.SetActive(true);
-        RemoveLastQuestions(); 
+        AudioManager.Instance.PlayWinSFX();
+        RemoveLastQuestions();
+        confir = true;
         Time.timeScale = 0;
     }
 
@@ -85,5 +95,6 @@ public class PlayController : MonoBehaviour
         CorrectPanel.SetActive(false);
         Time.timeScale = 1f;
         ActiveQuestions();
+        confir = false;
     }
 }
