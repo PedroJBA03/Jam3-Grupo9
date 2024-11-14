@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/MainMenu/Intro.unity
     guid: 3ffe57228a6136e4abddfc492b08d49b
   - enabled: 1
-    path: Assets/MainMenu/MenuPrincipal.unity
+    path: Assets/Scenes/MenuPrincipal.unity
     guid: 1ceec2d3ef5ea8b438f20ac58cd1fa63
   - enabled: 1
-    path: Assets/Main Scene/Main Scene.unity
+    path: Assets/Scenes/Main Scene.unity
     guid: 91f3d8cb2ddd9164ba78cf1a7ab23c18
   m_configObjects: {}
