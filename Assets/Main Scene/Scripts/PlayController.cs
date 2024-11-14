@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayController : MonoBehaviour
@@ -50,6 +51,7 @@ public class PlayController : MonoBehaviour
             // Reproduce el sonido de victoria para el equipo rojo
             AudioManager.Instance.PlayRedTeamWinSFX();
             hasPlayedWinSound = true;
+            StartCoroutine(ComeBack());
         }
         else if (conquistar == 100 && !hasPlayedWinSound)
         {
@@ -59,6 +61,7 @@ public class PlayController : MonoBehaviour
             // Reproduce el sonido de victoria para el equipo azul
             AudioManager.Instance.PlayBlueTeamWinSFX();
             hasPlayedWinSound = true;
+            StartCoroutine(ComeBack());
         }
     }
 
@@ -96,5 +99,11 @@ public class PlayController : MonoBehaviour
         Time.timeScale = 1f;
         ActiveQuestions();
         confir = false;
+    }
+
+    IEnumerator ComeBack()
+    {
+        yield return new WaitForSeconds(4.0f);
+        SceneManager.LoadScene(0);
     }
 }

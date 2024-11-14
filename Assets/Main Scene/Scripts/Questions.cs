@@ -7,7 +7,7 @@ public class Questions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(1.8f, 4f, 0);
+        transform.position = new Vector3(1.8f, 3.4f, 0);
     }
 
 }
