@@ -149,10 +149,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 46316811112912095, guid: 2d43e86744507cc49a9b0ebec3e8308f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6306981822476102302, guid: 2d43e86744507cc49a9b0ebec3e8308f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3731456
@@ -209,10 +205,6 @@ PrefabInstance:
     - target: {fileID: 4087913692021770143, guid: 7b970fbb597a917499f735e0031aae52, type: 3}
       propertyPath: m_Name
       value: Question (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087913692021770143, guid: 7b970fbb597a917499f735e0031aae52, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7238395852471732573, guid: 7b970fbb597a917499f735e0031aae52, type: 3}
       propertyPath: m_LocalPosition.x
@@ -311,10 +303,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 6982820702436238670, guid: aca838470f6b4764f9396dcdf0906c23, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -371,10 +359,6 @@ PrefabInstance:
     - target: {fileID: 7756020642457204149, guid: 75d3d3643765bb04b88846f17034360c, type: 3}
       propertyPath: m_Name
       value: Question (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7756020642457204149, guid: 75d3d3643765bb04b88846f17034360c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -433,10 +417,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 6522903214896164842, guid: 58907740d1ddd1f408aee02caadf92e3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -464,10 +444,6 @@ PrefabInstance:
     - target: {fileID: 1278366262683280151, guid: c96d974957b07154ebfc44b3dbdc38e7, type: 3}
       propertyPath: m_Name
       value: Question
-      objectReference: {fileID: 0}
-    - target: {fileID: 1278366262683280151, guid: c96d974957b07154ebfc44b3dbdc38e7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3695749729464385712, guid: c96d974957b07154ebfc44b3dbdc38e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -708,10 +684,6 @@ PrefabInstance:
     - target: {fileID: 4700250791737560042, guid: a1339c6a9c9b7304b8cbacd1ab194fbf, type: 3}
       propertyPath: m_Name
       value: Question (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4700250791737560042, guid: a1339c6a9c9b7304b8cbacd1ab194fbf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -960,10 +932,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 7939517302897029770, guid: a18d540fd86c4c147babf5f5a767e36f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1020,10 +988,6 @@ PrefabInstance:
     - target: {fileID: 4334620399114796534, guid: c8a6b32d7dcf5a64b835b2fa5e776c90, type: 3}
       propertyPath: m_Name
       value: Question (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4334620399114796534, guid: c8a6b32d7dcf5a64b835b2fa5e776c90, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1098,10 +1062,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 4952687954710112420, guid: db08e8ffd8b7808479d4d3ef35db64b7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1159,10 +1119,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (18)
       objectReference: {fileID: 0}
-    - target: {fileID: 9047620504284560677, guid: 5a3050c14ac020740a9f30d2c8ed90b0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1179,10 +1135,6 @@ PrefabInstance:
     - target: {fileID: 299552312266265691, guid: a7cfd2360b2e41f4092272a7b4fa98ed, type: 3}
       propertyPath: m_Name
       value: Question (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 299552312266265691, guid: a7cfd2360b2e41f4092272a7b4fa98ed, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7576198846357861332, guid: a7cfd2360b2e41f4092272a7b4fa98ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1334,10 +1286,6 @@ PrefabInstance:
     - target: {fileID: 6071742639921811187, guid: e2a82c25b6e416d49b79ff2b64eca999, type: 3}
       propertyPath: m_Name
       value: Question (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6071742639921811187, guid: e2a82c25b6e416d49b79ff2b64eca999, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8584813700233603836, guid: e2a82c25b6e416d49b79ff2b64eca999, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1704,10 +1652,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 1007733790613991828, guid: 1b544caa1c77976438ffbe30ab966e31, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8647326080016354965, guid: 1b544caa1c77976438ffbe30ab966e31, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3731456
@@ -1764,10 +1708,6 @@ PrefabInstance:
     - target: {fileID: 2793595357636446601, guid: bc292262f1eb1b74493cfc02923d69ac, type: 3}
       propertyPath: m_Name
       value: Question (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793595357636446601, guid: bc292262f1eb1b74493cfc02923d69ac, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8768992084257393489, guid: bc292262f1eb1b74493cfc02923d69ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1876,10 +1816,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 3568119138357280503, guid: fbfc01e53c0c2f14a908d1e2b6375697, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1937,10 +1873,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question (20)
       objectReference: {fileID: 0}
-    - target: {fileID: 2139849956592215715, guid: 8a40829a37ae4de41be471ef37a4baab, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1997,10 +1929,6 @@ PrefabInstance:
     - target: {fileID: 7773479365940197557, guid: 78c5b4f4510e0474e82c09ea5f2150c1, type: 3}
       propertyPath: m_Name
       value: Question (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7773479365940197557, guid: 78c5b4f4510e0474e82c09ea5f2150c1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2063,10 +1991,6 @@ PrefabInstance:
     - target: {fileID: 3085018527634606080, guid: da170e78e8a12e949a17562f4c5a0ba8, type: 3}
       propertyPath: m_Name
       value: Question (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3085018527634606080, guid: da170e78e8a12e949a17562f4c5a0ba8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

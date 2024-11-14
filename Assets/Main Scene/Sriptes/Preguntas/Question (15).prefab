@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5568180713072470625}
   - component: {fileID: 7903249740298206380}
   - component: {fileID: 81255268836737499}
-  - component: {fileID: 672444402622268485}
+  - component: {fileID: 3557498921356396264}
   m_Layer: 0
   m_Name: Incorrect
   m_TagString: InAnswer
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5695682, y: 0.17307425}
   m_EdgeRadius: 0
---- !u!114 &672444402622268485
+--- !u!114 &3557498921356396264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 342791987017896833}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40f003a358d0da643a4fedc66f0a1e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 38806db1085212b48a6c407e7c360d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1282684238021817151
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 2249774038850162719}
   - component: {fileID: 8300058144097435193}
   - component: {fileID: 6273213210832225147}
-  - component: {fileID: 2992454585385522344}
+  - component: {fileID: 6458075707592800226}
   m_Layer: 0
   m_Name: Incorrect1
   m_TagString: InAnswer
@@ -274,7 +274,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9275281, y: 0.2868182}
   m_EdgeRadius: 0
---- !u!114 &2992454585385522344
+--- !u!114 &6458075707592800226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1282684238021817151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40f003a358d0da643a4fedc66f0a1e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 443cc243c1226d140821cff9b4375ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4087913692021770143
@@ -301,7 +301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7238395852471732573
 Transform:
   m_ObjectHideFlags: 0

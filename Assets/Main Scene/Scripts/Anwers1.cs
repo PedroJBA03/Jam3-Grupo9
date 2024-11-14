@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Answers : MonoBehaviour
+public class Anwers1 : MonoBehaviour
 {
-
+    // Start is called before the first frame update
     void Start()
     {
-        float randomX = Random.Range(-2f, 1f);
+        float randomX = Random.Range(1.5f, 4f);
         float randomY = Random.Range(-2.5f, 2.75f);
 
         transform.position = new Vector3(randomX, randomY, 0);

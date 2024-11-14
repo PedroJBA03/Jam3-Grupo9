@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 8608192352476103845}
   - component: {fileID: 8763559067813235164}
   - component: {fileID: 3535742346059413445}
-  - component: {fileID: 3489586232331425864}
+  - component: {fileID: 3109030435172661378}
   m_Layer: 0
   m_Name: Incorrect1
   m_TagString: InAnswer
@@ -419,7 +419,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8177637, y: 0.2868182}
   m_EdgeRadius: 0
---- !u!114 &3489586232331425864
+--- !u!114 &3109030435172661378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7264402243754133490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40f003a358d0da643a4fedc66f0a1e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 443cc243c1226d140821cff9b4375ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7296814435781120748
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 4650403785751218340}
   - component: {fileID: 5843447699596003844}
   - component: {fileID: 78799232479398802}
-  - component: {fileID: 1535171583539134636}
+  - component: {fileID: 3362931132949814373}
   m_Layer: 0
   m_Name: Correct
   m_TagString: CoAnswer
@@ -562,7 +562,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3377, y: 0.2258319}
   m_EdgeRadius: 0
---- !u!114 &1535171583539134636
+--- !u!114 &3362931132949814373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -571,6 +571,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7296814435781120748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40f003a358d0da643a4fedc66f0a1e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 38806db1085212b48a6c407e7c360d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
