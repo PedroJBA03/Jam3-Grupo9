@@ -8,7 +8,7 @@ public class Anwers1 : MonoBehaviour
     void Start()
     {
         float randomX = Random.Range(1.5f, 4f);
-        float randomY = Random.Range(-2.5f, 2.75f);
+        float randomY = Random.Range(-2.5f, 2.4f);
 
         transform.position = new Vector3(randomX, randomY, 0);
     }

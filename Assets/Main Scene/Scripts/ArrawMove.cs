@@ -7,6 +7,7 @@ public class ArrawMove : MonoBehaviour
 {
     public bool CorAnsO;
     public float speed;
+    public float run;
 
     float movementX;
     float movementY;
@@ -31,7 +32,7 @@ public class ArrawMove : MonoBehaviour
 
         movementX = 0;
         movementY = 0;
-        speed = 0;
+        run = 0;
 
         controladorJuego = GameObject.FindObjectOfType<PlayController>();
 
@@ -52,7 +53,7 @@ public class ArrawMove : MonoBehaviour
 
     private void Rigid()
     {
-        Rb.velocity = new Vector2(movementX * speed, movementY * speed);
+        Rb.velocity = new Vector2(movementX * speed * run, movementY * speed * run);
     }
 
     private void MoveLimit()
@@ -137,7 +138,7 @@ public class ArrawMove : MonoBehaviour
     {
         if (controladorJuego != null && controladorJuego.playQ == true)
         {
-            speed = 3f;
+            run = 1f;
         }
     }
 

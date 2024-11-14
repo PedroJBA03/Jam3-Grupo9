@@ -8,6 +8,7 @@ public class AWSDMove : MonoBehaviour
     public bool CorAnsT;
 
     public float speed;
+    public float run;
 
     bool fail = true;
 
@@ -33,7 +34,7 @@ public class AWSDMove : MonoBehaviour
 
         movementX = 0;
         movementY = 0;
-        speed = 0;
+        run = 0f;
 
         controladorJuego = GameObject.FindObjectOfType<PlayController>();
 
@@ -54,7 +55,7 @@ public class AWSDMove : MonoBehaviour
 
     private void Rigid()
     {
-        Rb.velocity = new Vector2(movementX * speed, movementY * speed);
+        Rb.velocity = new Vector2(movementX * speed * run, movementY * speed * run);
     }
 
     private void MoveLimit()
@@ -137,7 +138,7 @@ public class AWSDMove : MonoBehaviour
     {
         if (controladorJuego != null && controladorJuego.playQ == true)
         {
-            speed = 3f;
+            run = 1;
         }
     }
 

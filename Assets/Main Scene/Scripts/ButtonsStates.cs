@@ -36,6 +36,6 @@ public class ButtonsStates : MonoBehaviour
 
     public void Exit()
     {
-        
+        SceneManager.LoadScene(0);
     }
 }
